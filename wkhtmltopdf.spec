@@ -1,6 +1,7 @@
 %define major 0
 %define libname %mklibname wkhtmltox %{major}
 %define develname %mklibname wkhtmltox -d
+%define debug_package %nil
 
 Name:		wkhtmltopdf
 Version:	0.12.4
@@ -37,7 +38,6 @@ Provides:	%{name}-devel = %{version}-%{release}
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
-
 %prep
 %setup -q 
 
@@ -47,6 +47,7 @@ sed -i.lib -e \
 	src/lib/lib.pro
 
 %build
+%setup_compile_flags
 %qmake_qt5
 %make
 
