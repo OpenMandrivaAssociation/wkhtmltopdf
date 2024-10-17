@@ -8,7 +8,7 @@ Version:	0.12.4
 Release:	1
 Summary:	Simple shell utility to convert html to pdf
 License:	GPLv3+
-URL:		http://wkhtmltopdf.org/
+URL:		https://wkhtmltopdf.org/
 Source0:	https://github.com/%{name}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 Group:		System/Printing
 BuildRequires:	pkgconfig(Qt5WebKitWidgets)
