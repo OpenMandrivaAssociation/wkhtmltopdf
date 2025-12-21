@@ -11,6 +11,7 @@ License:	GPLv3+
 URL:		https://wkhtmltopdf.org/
 Source0:	https://github.com/%{name}/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 Group:		System/Printing
+BuildRequires:	make
 BuildRequires:	pkgconfig(Qt5WebKitWidgets)
 BuildRequires:	pkgconfig(Qt5XmlPatterns)
 BuildRequires:	pkgconfig(Qt5Svg)
